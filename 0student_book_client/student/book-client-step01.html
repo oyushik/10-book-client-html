@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도서 관리 시스템</title>
+  </head>
+  <body>
+    <h1>도서 관리 시스템</h1>
+
+    <div>
+      <h2>도서 등록</h2>
+      <form>
+        <label for="title">제목:</label>
+        <input type="text" name="title" id="title" />
+
+        <label for="author">작가:</label>
+        <input type="text" name="author" id="author" />
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" name="isbn" id="isbn" />
+
+        <label for="price">가격:</label>
+        <input
+          type="number"
+          name="price"
+          id="price"
+          placeholder="0"
+          min="0"
+          step="1000"
+          pattern="[0-9]{1,10}"
+        />
+
+        <label for="publishDate">출판일:</label>
+        <input type="date" name="publishDate" id="publishDate" />
+
+        <button type="submit">도서 등록</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>도서 목록</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>제목</th>
+            <th>작가</th>
+            <th>ISBN</th>
+            <th>가격</th>
+            <th>출판일</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
